@@ -1,1 +1,22 @@
-<p>task-list works!</p>
+<div class="add-container">
+    <div class="add-header">
+        <h3>Agregar Tarea</h3>
+
+    </div>
+    <div class="add-task">
+        <label for="title">Titulo</label>
+        <input type="text" id="title" [(ngModel)]="newTask.title" />
+    </div>
+    <div class="info">
+        <div class="info-title">
+            <h2>{{newTask.title}}</h2>
+        </div>
+
+    </div>
+    <div class="add-buttons">
+        <button (click)="deleteTask()">Eliminar</button>
+        <button (click)="addTask()">Agregar Tarea</button>
+
+    </div>
+
+</div>
